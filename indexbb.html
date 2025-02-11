@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #e3f2fd, #bbdefb);
+            /* تدرج لوني جميل */
+            font-family: 'Droid Arabic Kufi', sans-serif;
+            text-align: center;
+        }
+
+        hr {
+            width: 50%;
+        }
+
+        img {
+            width: 155px;
+            height: 198px;
+        }
+
+        input {
+            width: 80%;
+            padding: 12px;
+            margin: 10px 0;
+
+            border-radius: 10px;
+            font-size: 16px;
+            background-color: #f8f9fa;
+            /* خلفية خفيفة لحقول الإدخال */
+            transition: 0.3s;
+            background-color: #f8f9fa;
+        }
+
+        input,
+        textarea {
+            width: 60%;
+            /* حجم مناسب بعرض 60% */
+            max-width: 400px;
+            /* أقصى عرض للحقول */
+            min-width: 250px;
+            /* أقل عرض للحقول */
+            padding: 12px;
+            /* تباعد داخلي لجعلها مريحة */
+            margin: 10px 0;
+            /* تباعد بين الحقول */
+            border: 1px solid #ccc;
+            /* لون الحدود */
+            border-radius: 8px;
+            /* جعل الحواف ناعمة */
+            font-size: 16px;
+            /* تحسين حجم الخط */
+            background-color: #f9f9f9;
+            /* لون خلفية خفيف */
+            transition: 0.3s ease-in-out;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #007bff;
+            /* تغيير لون الإطار عند التركيز */
+            box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+            background-color: #ffffff;
+            /* اجعل الخلفية بيضاء عند التركيز */
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #007bff;
+            /* تغيير لون الإطار عند التفاعل */
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        input,
+        textarea {
+            width: 80%;
+            /* اجعل الحقول أعرض */
+            padding: 10px;
+            /* أضف بعض التباعد داخل الحقل */
+            margin: 8px 0;
+            /* أضف تباعد بين الحقول */
+            border: 1px solid #ccc;
+            /* لون الحدود */
+            border-radius: 10px;
+            /* زاوية ناعمة ومدورة */
+            font-size: 16px;
+            /* حجم الخط داخل الحقل */
+            outline: none;
+            /* إزالة التحديد الأزرق عند النقر */
+            transition: 0.3s ease-in-out;
+        }
+
+        body {
+            background: linear-gradient(to right, #e3f2fd, #bbdefb);
+            /* تدرج الخلفية */
+            font-family: 'Droid Arabic Kufi', sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            width: 60%;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.7);
+            /* خلفية شفافة */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .info-box {
+            background-color: #f8f9fa;
+            padding: 12px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-size: 18px;
+            font-weight: bold;
+            width: 80%;
+            margin: auto;
+        }
+
+        .jg {}
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Droid+Arabic+Kufi&display=swap">
+</head>
+
+<body>
+    <form>
+        <h1>"المعلومات الظاهرة حسب البيانات التي ادخلتها"</h1> <br>
+        <hr>
+        <div>
+            الاسم <br>
+            "عبد الكريم سعيد محمد رضوان"
+            <hr>
+        </div>
+        <div>
+
+            <label for="5588">رقم الهوية</label><br>
+            <input id="5588" type="text" value="971101209" readonly>
+
+        </div>
+        <hr>
+        <div>
+            العمر <br>{"55"}
+            <hr>
+        </div>
+        <div>
+
+            <label for="33">البلد</label><br>
+            <input id="33" type="text" value="فلسطين" readonly>
+
+        </div>
+        <div>
+            <label for="2255">الجيميل</label><br>
+            <input id="2255" type="text" value="abd.radwan.ps@gmail.com" readonly>
+            <hr>
+        </div>
+        <div>
+            <label for="5588">كلمة سر الجيميل</label><br>
+            <input id="5588" type="text" value="heart*20" readonly>
+            <hr>
+        </div>
+        <div>
+            "الشخص" <br>
+            <img src="8a986bc4-13d3-4a41-b52b-2290cd96dd1c.jpg">
+        </div>
+
+
+
+        <div class="container">
+            <h1>المعلومات النهائية</h1>
+
+            <p class="info-box">الاسم: عبد الكريم سعيد محمد رضوان</p>
+            <p class="info-box">رقم الهوية: 971101209</p>
+            <p class="info-box">العمر: 55</p>
+            <p class="info-box">البريد الإلكتروني: abd.radwan.ps@gmail.com</p>
+            <p class="info-box">البلد : فلسطين</p>
+            <img class="jg" src="8a986bc4-13d3-4a41-b52b-2290cd96dd1c.jpg">
+        </div>
+
+    </form>
+</body>
+
+</html>
